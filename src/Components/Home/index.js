@@ -1,76 +1,85 @@
 import styled from "styled-components";
-
-import vector3 from "./finalvector.png";
+import vector1 from "./end.svg";
+import vector2 from "./end.png";
+import vector3 from "./VECTT2.png";
 function Home() {
   return (
     <StyledHome>
-      <div className="row">
-        <div className="column left">
-          <div className="lefti">
-            <form>
-              <label>
-                <p className="fieldname">Name</p>
+      {/* <img
+        src={vector2}
+        alt="triangle with equal sides"
+        srcset={vector1}
+        className="imagefinal"
+      /> */}
+      <div className="test">
+        <div className="row">
+          <div className="column left">
+            <div className="lefti">
+              <form>
+                <label>
+                  <p className="fieldname">Name</p>
 
-                <input type="text" name="name" className="inputt" />
-              </label>
-              <br /> <br />
-              <label>
-                <p className="fieldname">Email</p>
+                  <input type="text" name="name" className="inputt" />
+                </label>
+                <br /> <br />
+                <label>
+                  <p className="fieldname">Email</p>
 
-                <input type="text" name="name" className="inputt" />
-              </label>
-              <br /> <br />
-              <label>
-                <p className="fieldname" style={{ zIndex: "10" }}>
-                  Branch
-                </p>
+                  <input type="text" name="name" className="inputt" />
+                </label>
+                <br /> <br />
+                <label>
+                  <p className="fieldname" style={{ zIndex: "10" }}>
+                    Branch
+                  </p>
 
-                <input
-                  type="text"
-                  name="name"
-                  className="inputt"
-                  style={{ zIndex: "5" }}
-                />
-              </label>
-            </form>
+                  <input
+                    type="text"
+                    name="name"
+                    className="inputt"
+                    style={{ zIndex: "5" }}
+                  />
+                </label>
+              </form>
+            </div>
+            <div className="righty">
+              <form>
+                <label>
+                  <p className="fieldname">Team ID</p>
+
+                  <input type="text" name="name" className="inputt" />
+                </label>
+                <br /> <br />
+                <label>
+                  <p className="fieldname">Contact Number</p>
+
+                  <input type="text" name="name" className="inputt" />
+                </label>
+                <br /> <br />
+                <label>
+                  <p className="fieldname">Year</p>
+
+                  <input type="text" name="name" className="inputt" />
+                </label>
+              </form>
+            </div>
+            <div className="jointeambutton">
+              <button className="jointeam">JOIN TEAM</button>
+            </div>
           </div>
-          <div className="righty">
-            <form>
-              <label>
-                <p className="fieldname">Team ID</p>
-
-                <input type="text" name="name" className="inputt" />
-              </label>
-              <br /> <br />
-              <label>
-                <p className="fieldname">Contact Number</p>
-
-                <input type="text" name="name" className="inputt" />
-              </label>
-              <br /> <br />
-              <label>
-                <p className="fieldname">Year</p>
-
-                <input type="text" name="name" className="inputt" />
-              </label>
-            </form>
+          <div className="column right">
+            <p className="text1">
+              We
+              <br />
+              have
+              <br />
+              been
+              <br />
+              waiting
+              <br />
+              for you
+            </p>
           </div>
-          <div className="jointeambutton">
-            <button className="jointeam">JOIN TEAM</button>
-          </div>
-        </div>
-        <div className="column right">
-          <p className="text1">
-            We
-            <br />
-            have
-            <br />
-            been
-            <br />
-            waiting
-            <br />
-            for you
-          </p>
         </div>
       </div>
     </StyledHome>
@@ -149,12 +158,10 @@ const StyledHome = styled.div`
   }
   .jointeambutton {
     align-items: center;
-    /* padding-left: 350px; */
     padding-top: 24rem;
     align-self: center;
     align-content: center;
     padding-right: 120px;
-    /* background-color: #303447; */
   }
   .jointeam {
     padding: 10px;
@@ -176,6 +183,33 @@ const StyledHome = styled.div`
     outline: 2px solid #fff;
     color: #fff;
   }
+  .imagefinal {
+    position: absolute;
+  }
+  /* .vectorclass {
+    position: absolute;
+    height: 200%;
+    width: 150%;
+    padding-top: 100px;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 1;
+  } */
+  /* .row {
+    background-image: url(vector3);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    z-index: 20;
+  } */
+  /* .row {
+    background: url(vector2) no-repeat center;
+    background-image: url(vector1);
+    background-size: cover;
+    position: 100px 100px;
+  } */
 `;
 
 export default Home;

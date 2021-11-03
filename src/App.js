@@ -25,6 +25,7 @@ const StyledApp = styled.div`
     #f97171 70%,
     #f97171 100%
   );
+
   /* background-color: #385a7c; */
   height: 100vh;
   font-family: "Poppins";

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -14,7 +14,7 @@ body{
 width:100%;
 font-family: poppins,sans-serif;
 
---padding:2rem;
+/* --padding:2rem; */
 }
 
 
@@ -27,6 +27,6 @@ a{
     color:inherit;
 }
 
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
